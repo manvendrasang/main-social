@@ -9,6 +9,9 @@ import helmet from "helmet";
 import path from "path";
 
 import { fileURLToPath } from "url";
+import { register } from "./controllers/auth.js";
+import authRoutes from "./router/auth.js"
+import { verifyToken } from "./middleware/auth.js";
 
 // CONFIGURATIONS
 
@@ -39,6 +42,14 @@ const storage = multer.diskStorage({
     }
 });
 const upload = multer({ storage }); 
+
+// ROUTES WITH FILES
+
+app.post("/auth/register", upload.single("picture"), register)
+
+// ROUTES
+
+app.use("/auth", authRoutes);
 
 // MONGOOSE SETUP
 
