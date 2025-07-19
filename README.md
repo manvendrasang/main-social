@@ -51,3 +51,7 @@ The above steps are to remove the .env file from the commit history. But in some
 9. Now recommit everything either via a third party software like gitKraken or by inbuilt git utilities in vscode
 10. Once commited, push the changes to the remote repository with: git push --force --all
 11.  Verify the changes
+
+To run the Server:
+
+node index.js
