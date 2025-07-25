@@ -10,7 +10,7 @@ import path from "path";
 
 import { fileURLToPath } from "url";
 import { register } from "./controllers/auth.js";
-import authRoutes from "./route/auth.js"
+import authRoutes from "./routes/auth.js"
 import { verifyToken } from "./middleware/auth.js";
 import userRoutes from "./routes/users.js";
 import postRoutes from "./routes/posts.js"

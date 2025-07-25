@@ -10,18 +10,17 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.16.4",
     "morgan": "^1.10.1",
-    "multer": "^1.4.4",
+    "multer": "^2.0.2",
     "multer-gridfs-storage": "^5.0.2"
   },
   "name": "main-social",
   "version": "1.0.0",
   "description": "This project is not open-source. All rights reserved.",
-  "main": "index.js",  
+  "main": "index.js",
   "type": "module",
-  "devDependencies": {},
   "scripts": {
-    "dev": "node ./server/index.js",
-    "start": "nodemon ./server/index.js"
+    "dev": "node index.js",
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -30,7 +29,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-
   "bugs": {
     "url": "https://github.com/manvendrasang/main-social/issues"
   },
